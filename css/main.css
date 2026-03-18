@@ -37,8 +37,8 @@ h1{
 }
 
 .target-zone{
-    width:270px;
-    height:200px;
+    width:120px;
+    height:120px;
     border-radius:15px;
     background:#111;
     display:flex;
@@ -59,7 +59,7 @@ h1{
     letter-spacing:1px;
 }
 
-.character-img{
+.characterimg{
     position:absolute;
     top:0;
     left:0;
@@ -129,4 +129,46 @@ h1{
 
 .hidden{
     display:none;
+}
+
+@media screen and (min-width: 768px) {
+
+.target-zone{
+    width:170px;
+    height:200px;
+    border-radius:15px;
+    background:#111;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.target-zone:hover{
+    background:rgba(255,255,255,0.12);
+    transform:scale(1.05);
+}
+
+}
+
+@media screen and (min-width: 1200px) {
+    
+.target-zone{
+    width:270px;
+    height:200px;
+    border-radius:15px;
+    background:#111;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    overflow:hidden;
+}
+    
+.target-zone:hover{
+    background:rgba(255,255,255,0.12);
+    transform:scale(1.05);
+}
+
 }
